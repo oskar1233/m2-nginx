@@ -2,7 +2,8 @@
 
 ENV_VARS_TO_REPLACE="\
   \$DOMAIN \
-  \$PORT
+  \$PORT \
+  \$FPM_SERVER
 "
 
 for f in $(find /nginx-config/ -type f -regex '.*\.conf'); do
